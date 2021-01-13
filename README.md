@@ -1,1 +1,1 @@
-# pip-timers-service
+# pip-github.com/expproletariy/pip-timers-service
