@@ -23,6 +23,11 @@ func NewTimeSessionServiceFactory() *TimeSessionServiceFactory {
 	)
 
 	c.RegisterType(
+		cref.NewDescriptor("pip-timers-service", "persistence", "mongodb", "*", "1.0"),
+		persist.NewTimersMongoDBPersistence,
+	)
+
+	c.RegisterType(
 		cref.NewDescriptor("pip-timers-service", "controller", "default", "*", "1.0"),
 		logic.NewTimeSessionController,
 	)
