@@ -13,10 +13,10 @@ import (
 
 type TimeSessionCommandSet struct {
 	ccmd.CommandSet
-	controller IBeaconsController
+	controller ITimeSessionController
 }
 
-func NewTimeSessionCommandSet(controller IBeaconsController) *TimeSessionCommandSet {
+func NewTimeSessionCommandSet(controller ITimeSessionController) *TimeSessionCommandSet {
 	c := &TimeSessionCommandSet{
 		CommandSet: *ccmd.NewCommandSet(),
 		controller: controller,

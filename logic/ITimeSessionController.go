@@ -5,7 +5,7 @@ import (
 	cdata "github.com/pip-services3-go/pip-services3-commons-go/data"
 )
 
-type IBeaconsController interface {
+type ITimeSessionController interface {
 	GetTimeSessions(correlationId string, filter *cdata.FilterParams, paging *cdata.PagingParams) (page *dataV1.TimeSessionDataPage, err error)
 
 	GetTimeSessionById(correlationId string, timerSessionId string) (item *dataV1.TimeSession, err error)
